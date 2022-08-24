@@ -16,3 +16,21 @@ const eventBust= {
    }
 }
 ```
+On Method used listen the attachd event to the document
+```
+   on(event, callback) {
+      event.addEventListener(event, (e) => callback(e.details));
+   }
+```
+dispatch method will fire the event using the CustomEvent event along with event data
+```
+   dispatch(event, data) {
+      document.dispatchEvent(new CustomEvent(event, { detail: data }));
+   }
+```
+remove method is used to remove event from the document object
+```
+   remove(event, callback) {
+      document.removeEventListener(event, callback);
+   }
+```
