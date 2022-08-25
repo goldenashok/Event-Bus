@@ -3,6 +3,7 @@
    - Rxjs store
    - global event-driven system
    - PubSub system
+   - useContext (used only in hook)
 2. Event bus implementation using PuSub Pattern. this will allow to listen and dispatch the event from components.
 3. Event bus haa 3 methods On, dispatch and remove
 
